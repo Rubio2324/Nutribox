@@ -4,7 +4,7 @@ Modelos de base de datos - NutriBox
 from sqlalchemy import Column, Integer, String, Float, Boolean, DateTime, ForeignKey, Text, Date, Enum
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
-from app.database.connection import Base
+from backend.app.database.connection import Base
 import enum
 
 

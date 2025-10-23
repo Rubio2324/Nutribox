@@ -3,12 +3,12 @@ Script de inicialización de base de datos
 Crea roles, tipos de membresía y datos de prueba
 """
 from sqlalchemy.orm import Session
-from app.database.connection import SessionLocal, engine, Base
-from app.models.models import (
+from backend.app.database.connection import SessionLocal, engine, Base
+from backend.app.models.models import (
     Rol, TipoMembresia, Usuario, Alimento,
     RolEnum, TipoMembresiaEnum, EstadoAlimentoEnum
 )
-from app.core.security import get_password_hash
+from backend.app.core.security import get_password_hash
 
 
 def init_db():

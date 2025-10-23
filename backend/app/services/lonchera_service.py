@@ -4,11 +4,11 @@ Servicio de Lonchera - Lógica de negocio
 from sqlalchemy.orm import Session
 from typing import Optional, List
 from datetime import date
-from app.models.models import (
+from backend.app.models.models import (
     Lonchera, LoncheraAlimento, Alimento, Hijo, 
     EstadoLoncheraEnum, Usuario, TipoMembresia
 )
-from app.schemas.lonchera import (
+from backend.app.schemas.lonchera import (
     LoncheraCreate, LoncheraUpdate, 
     LoncheraAlimentoCreate, ResumenNutricional
 )

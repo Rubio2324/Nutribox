@@ -6,15 +6,15 @@ from sqlalchemy.orm import Session
 from typing import List, Optional
 from datetime import date
 
-from app.database.connection import get_db
-from app.schemas.lonchera import (
+from backend.app.database.connection import get_db
+from backend.app.schemas.lonchera import (
     Lonchera, LoncheraCreate, LoncheraUpdate, 
     LoncheraWithAlimentos, LoncheraAlimentoCreate,
     ResumenNutricional
 )
-from app.services.lonchera_service import LoncheraService
-from app.routers.auth import get_current_user
-from app.models.models import Usuario, TipoMembresiaEnum
+from backend.app.services.lonchera_service import LoncheraService
+from backend.app.routers.auth import get_current_user
+from backend.app.models.models import Usuario, TipoMembresiaEnum
 
 router = APIRouter()
 

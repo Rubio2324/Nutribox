@@ -51,8 +51,8 @@ class Usuario(UsuarioBase):
 
 class UsuarioWithRelations(Usuario):
     """Schema de Usuario con relaciones"""
-    from app.schemas.hijo import HijoSimple
-    from app.schemas.direccion import DireccionSimple
+    from backend.app.schemas.hijo import HijoSimple
+    from backend.app.schemas.otros import DireccionSimple
     
     hijos: List[HijoSimple] = []
     direcciones: List[DireccionSimple] = []

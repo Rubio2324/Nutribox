@@ -5,11 +5,11 @@ from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
 from typing import List, Optional
 
-from app.database.connection import get_db
-from app.schemas.alimento import Alimento, AlimentoCreate, AlimentoUpdate, AlimentoSimple
-from app.services.alimento_service import AlimentoService
-from app.routers.auth import get_current_user
-from app.models.models import Usuario, RolEnum
+from backend.app.database.connection import get_db
+from backend.app.schemas.alimento import Alimento, AlimentoCreate, AlimentoUpdate, AlimentoSimple
+from backend.app.services.alimento_service import AlimentoService
+from backend.app.routers.auth import get_current_user
+from backend.app.models.models import Usuario, RolEnum
 
 router = APIRouter()
 

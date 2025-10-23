@@ -4,11 +4,11 @@ NutriBox - Aplicación Principal FastAPI
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from app.core.config import settings
-from app.database.connection import engine, Base
+from backend.app.core.config import settings
+from backend.app.database.connection import engine, Base
 
 # Importar routers
-from app.routers import auth, alimentos, loncheras
+from backend.app.routers import auth, alimentos, loncheras
 
 # Crear tablas
 Base.metadata.create_all(bind=engine)

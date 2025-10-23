@@ -4,8 +4,8 @@ Servicio de Alimento - Lógica de negocio
 from sqlalchemy.orm import Session
 from sqlalchemy import or_
 from typing import Optional, List
-from app.models.models import Alimento, HistorialAlimento, EstadoAlimentoEnum
-from app.schemas.alimento import AlimentoCreate, AlimentoUpdate
+from backend.app.models.models import Alimento, HistorialAlimento, EstadoAlimentoEnum
+from backend.app.schemas.alimento import AlimentoCreate, AlimentoUpdate
 from fastapi import HTTPException, status
 import json
 

@@ -5,9 +5,9 @@ from sqlalchemy.orm import Session
 from sqlalchemy import or_
 from typing import Optional, List
 from datetime import datetime
-from app.models.models import Usuario, Rol
-from app.schemas.usuario import UsuarioCreate, UsuarioUpdate
-from app.core.security import get_password_hash, verify_password
+from backend.app.models.models import Usuario, Rol
+from backend.app.schemas.usuario import UsuarioCreate, UsuarioUpdate
+from backend.app.core.security import get_password_hash, verify_password
 from fastapi import HTTPException, status
 
 
