@@ -61,9 +61,7 @@ class Lonchera(LoncheraBase):
 
 class LoncheraWithAlimentos(Lonchera):
     """Schema de Lonchera con alimentos"""
-
-    from backend.app.schemas.alimento import AlimentoNutricional
-    
+    # Simplemente, usa List[dict], ya lo tenías bien
     alimentos: List[dict] = []
     resumen_nutricional: Optional[dict] = None
 
